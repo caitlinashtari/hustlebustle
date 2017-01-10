@@ -1,17 +1,17 @@
-<br>
-<div class="row">
-  <div class="col s12 well grey">
-    <div class="row">
-      {{#each model as |story|}}
-        <div class="col s6">
-        <img src={{story.image}}>
-        </div>
+{{#each model as |story|}}
+  <br>
+  <div class="row">
+    <div class="col s12 well grey">
+      <div class="row">
+          <div class="col s6">
+            <img src={{story.image}}>
+          </div>
 
-        <div class="col s6">
-          <h4>{{story.title}}</h4>
-          {{story.content}}
-        </div>
-      {{/each}}
+          <div class="col s6">
+            <h4>{{story.title}}</h4>
+            {{story.content}}
+          </div>
+      </div>
     </div>
   </div>
-</div>
+{{/each}}
