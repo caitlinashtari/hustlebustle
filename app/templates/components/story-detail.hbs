@@ -5,6 +5,4 @@
 <h1>{{model.title}}</h1>
 <p>{{model.content}}</p>
 
-{{update-story story=model update="update"}}
-
-{{story-detail story=model destroyStory="destroyStory"}}
+<button {{action 'delete' story}}>Delete</button>

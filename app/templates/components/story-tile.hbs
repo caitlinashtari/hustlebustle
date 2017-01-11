@@ -6,7 +6,7 @@
         <img src={{story.image}} class="responsive-img">
       </div>
       <div class="col s6">
-        <h4>{{story.title}}</h4>
+        <h4>{{#link-to 'story' story.id}}{{story.title}}{{/link-to}}</h4>
         {{story.content}}
       </div>
     </div>
